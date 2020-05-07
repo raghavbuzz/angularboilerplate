@@ -1,0 +1,13 @@
+/* You can add global styles to this file, and also import other style files */
+@import './app/shared/styles/breakpoints';
+@import './app/shared/styles/colors';
+@import './app/shared/styles/variables';
+@import './app/shared/styles/mixins/cols';
+@import './app/shared/styles/global';
+@import './app/shared/styles/common';
+@import './app/shared/styles/components/footer';
+// @import './app/shared/styles/components/nav';
+@import './app/shared/styles/external-library-style-override';
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+//As we want to preload this style so added this to initial bundle.Please dont add all style here it will increase application bundle size.
+@import './app/shared/styles/components/pretension.scss';

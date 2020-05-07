@@ -1,0 +1,13 @@
+/* This file would contain css classes that would be commonly shared across components.
+This will take away the need to repeat the same styles across different component class files. */
+.comp-a-wrapper,
+.comp-b-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .card {
+    background-color: $grey-70;
+    max-width: 400px;
+  }
+}

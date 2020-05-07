@@ -1,0 +1,51 @@
+@import '../breakpoints';
+$columns: 12;
+
+@for $i from 1 through $columns {
+
+  .col-sm-#{$i} {
+    @media (min-width: $mobile-width-min) {
+      flex: 0 0 100%/$columns * $i;
+      max-width: 100%/$columns * $i;
+    }
+  }
+
+  .col-sm-offset-#{$i} {
+    @media (min-width: $mobile-width-min) {
+      margin-left: 100%/$columns * $i;
+    }
+  }
+
+}
+
+@for $i from 1 through $columns {
+
+  .col-md-#{$i} {
+    @media (min-width: $tablet-portrait) {
+      flex: 0 0 100%/$columns * $i;
+      max-width: 100%/$columns * $i;
+    }
+  }
+
+  .col-md-offset-#{$i} {
+    @media (min-width: $tablet-portrait) {
+      margin-left: 100%/$columns * $i;
+    }
+  }
+
+}
+
+@for $i from 1 through $columns {
+  .col-#{$i} {
+    @media (min-width: $desktop-width-min) {
+      flex: 0 0 100%/$columns * $i;
+      max-width: 100%/$columns * $i;
+    }
+  }
+
+  .col-offset-#{$i} {
+    @media (min-width: $desktop-width-min) {
+      margin-left: 100%/$columns * $i;
+    }
+  }
+}

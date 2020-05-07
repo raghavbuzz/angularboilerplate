@@ -1,0 +1,13 @@
+@import '../shared/styles/colors';
+
+$nav-background-color: $grey-30;
+
+.nav-list {
+  background-color: $nav-background-color;
+  padding: 5px;
+}
+
+.nav-list-item {
+  color: $white-color;
+  margin-right: 3px;
+}

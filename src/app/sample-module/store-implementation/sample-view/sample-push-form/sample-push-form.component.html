@@ -1,0 +1,16 @@
+<section class="comp-a-wrapper form-container">
+    <div class="form-format">
+        <h2 class='title'>New Message</h2>
+        <mat-form-field appearance="fill">
+            <mat-label>Title</mat-label>
+            <input [(ngModel)]='post.title' matInput>
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+            <mat-label>Body</mat-label>
+            <textarea [(ngModel)]='post.body' matInput></textarea>
+        </mat-form-field>
+       
+        <button  mat-stroked-button (click)='createPost()' >Save</button>
+    </div>
+</section>
+

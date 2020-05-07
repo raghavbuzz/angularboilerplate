@@ -1,0 +1,26 @@
+/** NAVIGATION BAR */
+$nav-background-color: $grey-30;
+$nav-hover-background-color: $grey-70;
+
+
+nav {
+  background-color: $nav-background-color;
+  font-size: 17px;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 86%;
+
+  ul {
+    padding: 15px;
+  }
+  .nav-link {
+    color: $white-off;
+    padding: 14px;
+    text-decoration: none;
+
+    &:hover {
+      background-color: $nav-hover-background-color;
+    }
+  }
+}

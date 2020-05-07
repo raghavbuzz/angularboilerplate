@@ -1,0 +1,40 @@
+<div class="container">
+    <h2 class="col-12">
+        The Boxes below are an example of responsive layout. In desktop all the way
+        to 1024px they behave as 2 column components. Between 1024 to 768px they
+        behave as a 1 column component, below 768px until 320px they again span to a
+        2 column layout
+      </h2>
+      <h3 class="col-12">
+        They achieve this using the right set of classes (col-# for desktop,
+        col-md-# for tablets and col-sm-# for mobile phones)
+      </h3>
+      <div class="grey-box col-6 col-md-12 col-sm-6">
+        Box 1
+        <picture class="align-center">
+          <source
+            media="(min-width: 768px) and (max-width: 1024px)"
+            srcset="../assets/images/tablet.svg"
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="../assets/images/telephone.svg"
+          />
+          <img class="col-2" src="../assets/images/laptop.svg" />
+        </picture>
+      </div>
+      <div class="grey-box col-6 col-md-12 col-sm-6">
+        Box 2
+        <picture class="align-center">
+          <source
+            media="(min-width: 768px) and (max-width: 1024px)"
+            srcset="../assets/images/tablet.svg"
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="../assets/images/telephone.svg"
+          />
+          <img class="col-2" src="../assets/images/laptop.svg" />
+        </picture>
+      </div>
+</div>

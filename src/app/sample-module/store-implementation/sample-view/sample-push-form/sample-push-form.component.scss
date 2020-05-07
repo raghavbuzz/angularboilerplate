@@ -1,0 +1,23 @@
+@import './../../../../shared/styles/variables';
+@import './../../../../shared/styles/colors';
+
+$container-top-pad: 5rem;
+$container-horizontal-pad: 2rem;
+$container-border-radius:5px;
+.form-format{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container{
+    border: solid $grey-70;
+    border-radius: $container-border-radius;
+    width: fit-content;
+    margin: $container-top-margin auto;
+    padding: 0 $container-horizontal-pad $container-horizontal-pad;
+}
+
+.title{
+    margin: $container-horizontal-pad auto;
+    color: $grey-30;
+}

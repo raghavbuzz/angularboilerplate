@@ -1,0 +1,25 @@
+/* This class should be used for overriding default material/primeng component styles */
+.material-table-round-corner {
+  $border-radius: 0.5rem;
+
+  .mat-table {
+    background: transparent;
+
+    thead, td {
+      background: $white-color;
+    }
+  }
+
+  td.mat-cell,
+  th.mat-header-cell {
+    &:first-child {
+      border-top-left-radius: $border-radius;
+      border-bottom-left-radius: $border-radius;
+    }
+
+    &:last-child {
+      border-top-right-radius: $border-radius;
+      border-bottom-right-radius: $border-radius;
+    }
+  }
+}

@@ -1,0 +1,61 @@
+html {
+  font-size: 10px;
+}
+
+body {
+  background-color: $grey-90;
+  margin: 0;
+}
+table{
+  width: 100%;
+}
+img {
+  width: 100%;
+}
+
+ul {
+  li {
+    list-style: none;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.align-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: $desktop-width-max;
+  margin: 0 auto;
+  width: 100%;
+}
+
+//This class is only for illustration and can be deleted while developing a project
+.grey-box {
+  background-color: #bdbdbd;
+  border: 1px solid #424242;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+.active {
+  background-color: $grey-70;
+  color: $white-off;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.content-center {
+  align-items: center;
+  justify-content: center;
+}
+
